@@ -1,6 +1,6 @@
 # K Group Developer Trainee assignment: back-end for product rating micro service
 
-This project is part of a home assignment for K Group's Developer Trainee program application. It is the API gateway for the 3 micro service clients:
+This project is part of a home assignment for K Group's Developer Trainee program application. It is the discovery server/API gateway for the 3 micro service clients:
 
 - Product catalog service
 - Product info service
@@ -16,10 +16,33 @@ This micro service lists user's rated products. In the client, the user may view
 
 The back-end logic is as follows:
 
-- Discovery Server (API gateway) serves the 3 micro services/clients and enables that they can retrieve data from each other.
-- Product catalog service offers an API ("catalog/{userId}") that shows user's products that they have rated. It fetches the product data from the Product info service and rating data from Ratings Data service
-- Product info service offers an API ("/api/products") that shows a list of all products. It utilizes Spring Data REST API.
-- Ratings data service offers two API's: one that shows a product and its rating ("/ratingsdata/products/{productId}") and one that shows user's ratings and their comments for products ("/ratingsdata/users/{userId}")
+### Discovery Server:
+
+(API gateway) serves the 3 micro services/clients and enables that they can retrieve data from each other.
+
+### Product Catalog Service:
+
+offers an API ("catalog/{userId}") that shows user's products that they have rated. It fetches the product data from the Product info service and rating data from Ratings Data service.
+
+![An API result for Product Catalog Service](./images/product-catalog-service.png?raw=true)
+
+### Product Info Service:
+
+offers an API ("/api/products") that shows a list of all products. It utilizes Spring Data REST API.
+
+![An API result for Product Info Service](./images/product-info-service.png?raw=true)
+
+### Ratings data service:
+
+offers two API's:
+
+- ("/ratingsdata/products/{productId}") shows a product and its rating
+
+![An API result for Ratings Data Service, user data](./images/ratings-data-service-user.png?raw=true)
+
+- ("/ratingsdata/users/{userId}") shows user's ratings and their comments for products
+
+![An API result for Ratings Data Service, product data](./images/ratings-data-service-product.png?raw=true)
 
 The back-end repositories for the micro service are found as follows:
 
