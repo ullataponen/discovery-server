@@ -24,13 +24,13 @@ The back-end logic is as follows:
 
 offers an API ("catalog/{userId}") that shows user's products that they have rated. It fetches the product data from the Product info service and rating data from Ratings Data service.
 
-![An API result for Product Catalog Service](./images/product-catalog-service.png?raw=true)
+![An API result for Product Catalog Service](https://github.com/ullataponen/discovery-server/blob/master/images/product-catalog-service.PNG?raw=true)
 
 ### Product Info Service:
 
 offers an API ("/api/products") that shows a list of all products. It utilizes Spring Data REST API.
 
-![An API result for Product Info Service](./images/product-info-service.png?raw=true)
+![An API result for Product Info Service](https://github.com/ullataponen/discovery-server/blob/master/images/product-info-service.PNG)
 
 ### Ratings data service:
 
@@ -38,11 +38,11 @@ offers two API's:
 
 - ("/ratingsdata/products/{productId}") shows a product and its rating
 
-![An API result for Ratings Data Service, user data](./images/ratings-data-service-user.png?raw=true)
+![An API result for Ratings Data Service, user data](https://github.com/ullataponen/discovery-server/blob/master/images/ratings-data-service-user.PNG)
 
 - ("/ratingsdata/users/{userId}") shows user's ratings and their comments for products
 
-![An API result for Ratings Data Service, product data](./images/ratings-data-service-product.png?raw=true)
+![An API result for Ratings Data Service, product data](https://github.com/ullataponen/discovery-server/blob/master/images/ratings-data-service-product.PNG)
 
 The back-end repositories for the micro service are found as follows:
 
