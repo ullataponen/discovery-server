@@ -22,7 +22,7 @@ The back-end logic is as follows:
 
 ### Product Catalog Service:
 
-offers an API ("catalog/{userId}") that shows user's products that they have rated. It fetches the product data from the Product info service and rating data from Ratings Data service.
+offers an API ("catalog/{userId}") that shows user's products that they have rated. In development phase the data is shown with any user id, e.g. "catalog/foo". It fetches the product data from the Product info service and rating data from Ratings Data service.
 
 ![An API result for Product Catalog Service](https://github.com/ullataponen/discovery-server/blob/master/images/product-catalog-service.PNG?raw=true)
 
