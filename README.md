@@ -1,6 +1,6 @@
 # Back-end for product rating micro service
 
-This project is part of a micro service provides user's product rating information. It is the discovery server/API gateway for the 3 micro service clients:
+This project is part of a micro service that provides user's product rating information. It is the discovery server/API gateway for the 3 micro service clients:
 
 - Product catalog service
 - Product info service
