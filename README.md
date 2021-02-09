@@ -1,6 +1,6 @@
-# K Group Developer Trainee assignment: back-end for product rating micro service
+# Back-end for product rating micro service
 
-This project is part of a home assignment for K Group's Developer Trainee program application. It is the discovery server/API gateway for the 3 micro service clients:
+This project is part of a micro service provides user's product rating information. It is the discovery server/API gateway for the 3 micro service clients:
 
 - Product catalog service
 - Product info service
@@ -57,7 +57,7 @@ Front-end repository is available at [https://github.com/ullataponen/product-rat
 
 ## Who will use this project?
 
-The project is a home assignment for K Group's Developer Trainee 2021 program application and it may be used by K Group for evaluation purposes. The creator and repository owner may use the skills learned during this project in future projects.
+Anyone can copy the repository for their own, non-commercial purposes. The creator and repository owner may use the skills learned during this project in future projects.
 
 ## What is the goal of this project?
 
